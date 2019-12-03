@@ -24,7 +24,8 @@ ul {
 }
 .thick-line {
   display: inline-block;
-  width: 112px;
+  width: 20%;
+  max-width: 112px;
   height: 4px;
   background-color: white;
   border-radius: 5px;
@@ -43,10 +44,12 @@ ul {
 }
 .nav-bar a {
   line-height: 100px;
+  white-space: nowrap;
 }
-.nav-bar .start-bootstrap {
+.nav-bar .row .start-bootstrap {
   font-weight: 700;
   font-size: 1.75em;
+  float: left;
 }
 .nav-bar .contact {
   font-weight: 700;
