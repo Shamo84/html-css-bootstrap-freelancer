@@ -121,3 +121,12 @@ ul {
   height: 974px;
   background-color: lightgreen;
 }
+
+.footer-top {
+  height: 302px;
+  background-color: #2C3E50;
+}
+.footer-bottom {
+  height: 72px;
+  background-color: #1A252F;
+}
