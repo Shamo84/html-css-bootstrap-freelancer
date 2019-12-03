@@ -98,10 +98,26 @@ ul {
 /* ABOUT */
 .about.fluid-container {
   background-color: #1ABC9C;
-  height: 500px;
+  height: 670px;
   text-align: center;
 }
+.about a {
+  width: 235px;
+}
 .about .free-download {
+  display: inline-block;
   height: 66px;
   width: 235px;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.about .free-download p {
+  font-size: 1.25em;
+  line-height: 66px;
+}
+
+.contact-me {
+  height: 974px;
+  background-color: lightgreen;
 }
