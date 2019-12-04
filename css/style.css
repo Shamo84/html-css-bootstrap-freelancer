@@ -110,12 +110,18 @@ ul {
   margin-right: 40px;
 }
 .nav_bar #hamburger {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
   display: inline-block;
   padding: 10px 13px;
   border-radius: 8px;
   background-color: #1ABC9C;
-  margin-top: 32px
+  margin-top: 32px;
+  border-width: 0;
+  text-transform: uppercase;
 }
+
 
 /* JUMBO */
 .jumbo {
@@ -151,11 +157,19 @@ ul {
 .portfolio .row [class*="col-"] {
   margin-bottom: 30px;
 }
+.portfolio .row a {
+  display: inline-block;
+  background-image: url(../img/plushover.png);
+  background-size: cover;
+  border-radius: 8px;
+}
 .portfolio img {
   width: 100%;
   max-width: 400px;
   border-radius: 8px;
-
+}
+.portfolio img:hover {
+  opacity: 0.1;
 }
 
 
@@ -202,6 +216,7 @@ ul {
   background-color: black;
 }
 
+
 /* FOOTER */
 .footer_top {
   background-color: #2C3E50;
@@ -226,7 +241,6 @@ ul {
 .footer_top .sm_icons:not(:last-child) {
   margin-right: 5px;
 }
-
 .fab.fa-fw {
   font-size: 20px;
   line-height: 48px;
@@ -238,7 +252,6 @@ ul {
   color: #117964;
   text-decoration: underline;
 }
-
 .footer_bottom {
   height: 72px;
   background-color: #1A252F;
