@@ -20,6 +20,9 @@ h2 {
 ul {
   list-style: none;
 }
+.padding_top_100 {
+  padding-top: 100px;
+}
 .padding_top_90 {
   padding-top: 90px;
 }
@@ -28,6 +31,9 @@ ul {
 }
 .padding_top_60 {
   padding-top: 60px;
+}
+.padding_bottom_100 {
+  padding-bottom: 100px;
 }
 .padding_bottom_90 {
   padding-bottom: 90px;
@@ -74,23 +80,25 @@ ul {
   z-index: 10;
 }
 .nav_bar a {
-  line-height: 104px;
   white-space: nowrap;
 }
 .nav_bar .row {
   padding: 0 4%;
 }
-.nav_bar .row .start-bootstrap {
+.nav_bar .row #srt_boot_top {
   font-size: 2em;
   float: left;
+  line-height: 104px;
+  vertical-align: middle;
 }
-.nav_bar .row .start-bootstrap:hover,
-.nav_bar .row .start-bootstrap:active,
-.nav_bar .row .start-bootstrap:focus {
+.nav_bar .row #srt_boot_top:hover,
+.nav_bar .row #srt_boot_top:active,
+.nav_bar .row #srt_boot_top:focus {
   text-decoration: none;
 }
 .nav_bar .contact {
   font-size: 1.15em;
+  line-height: 104px;
 }
 .nav_bar .contact a:hover,
 .nav_bar .contact a:active,
@@ -101,7 +109,13 @@ ul {
 .nav_bar li:not(:first-child) {
   margin-right: 40px;
 }
-
+.nav_bar #hamburger {
+  display: inline-block;
+  padding: 10px 13px;
+  border-radius: 8px;
+  background-color: #1ABC9C;
+  margin-top: 32px
+}
 
 /* JUMBO */
 .jumbo {
@@ -148,7 +162,6 @@ ul {
 /* ABOUT */
 .about {
   background-color: #1ABC9C;
-  height: 610px;
   text-align: center;
 }
 .about .container {
@@ -191,12 +204,39 @@ ul {
 
 /* FOOTER */
 .footer_top {
-  height: 302px;
   background-color: #2C3E50;
+}
+.footer_top [class*="col-"] {
+  margin-bottom: 20px;
+}
+.footer_top h3 {
+  margin-bottom: 25px;
 }
 .footer_top p {
   font-size: 1.4em;
   line-height: 1.5;
+}
+.footer_top .sm_icons {
+  display: inline-block;
+  width: 53px;
+  height: 53px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.footer_top .sm_icons:not(:last-child) {
+  margin-right: 5px;
+}
+
+.fab.fa-fw {
+  font-size: 20px;
+  line-height: 48px;
+}
+.footer_top #srtboot {
+  color: #1abc9c;
+}
+.footer_top #srtboot:hover {
+  color: #117964;
+  text-decoration: underline;
 }
 
 .footer_bottom {
