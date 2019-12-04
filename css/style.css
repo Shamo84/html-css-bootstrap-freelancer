@@ -4,6 +4,12 @@ body {
   padding-top: 104px;
   text-align: center;
 }
+
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 9.5px;
+  }
+}
 .font_lato {
   font-family: 'Lato', sans-serif;
 }
@@ -55,7 +61,7 @@ ul {
   color: white;
 }
 .fa-star {
-  font-size: 2.3em;
+  font-size: 32px;
   vertical-align: middle;
 }
 .thick_line {
@@ -114,12 +120,15 @@ ul {
   font-weight: 700;
   font-size: 12px;
   display: inline-block;
-  padding: 10px 13px;
+  padding: 13px 18px;
   border-radius: 8px;
   background-color: #1ABC9C;
   margin-top: 32px;
   border-width: 0;
   text-transform: uppercase;
+}
+.nav_bar #hamburger:hover {
+  background-color: #148F77;
 }
 
 
@@ -140,6 +149,8 @@ ul {
 }
 .jumbo h3 {
   margin-top: 35px;
+  font-size: 1.9em;
+  font-weight: 400;
 }
 
 
@@ -184,7 +195,7 @@ ul {
   margin-bottom: 30px;
 }
 .about p {
-  font-size: 1.4em;
+  font-size: 20px;
   line-height: 1.5;
 }
 .about a {
@@ -200,20 +211,46 @@ ul {
 .about .fa-download {
   margin-right: 8px;
 }
-.about .free-download p {
-  font-size: 1.45em;
+.about .btn-lg {
+  background-color: inherit;
+  border: 2px solid white;
+  padding: 17px 28px;
+  border-radius: 8px;
+}
+.about .btn-lg:hover {
+  background-color: #F8F9FA;
+}
+.about .btn-lg span {
+  font-size: 22px;
   font-weight: 400;
-  line-height: 56px;
+  vertical-align: middle;
 }
 
 
 /* CONTACT-ME */
-.contact-me {
+.contact_me {
   height: 974px;
-  background-color: lightgreen;
 }
-.contact-me .thick_line {
+.contact_me .thick_line {
   background-color: black;
+}
+.contact_me input,
+.contact_me textarea {
+  display: block;
+  border: 0;
+  font-size: 25px;
+  width: 100%;
+  margin-top: 40px;
+}
+.contact_me button {
+  background-color: #1ABC9C;
+  border: 0;
+  float: left;
+  padding: 20px 30px;
+  border-radius: 8px;
+}
+.contact_me button:hover {
+  background-color: #159A80;
 }
 
 
@@ -228,7 +265,7 @@ ul {
   margin-bottom: 25px;
 }
 .footer_top p {
-  font-size: 1.4em;
+  font-size: 20px;
   line-height: 1.5;
 }
 .footer_top .sm_icons {
@@ -237,6 +274,10 @@ ul {
   height: 53px;
   border: 2px solid white;
   border-radius: 50%;
+}
+.footer_top .sm_icons:hover {
+  background-color: #F8F9FA;
+  color: black;
 }
 .footer_top .sm_icons:not(:last-child) {
   margin-right: 5px;
@@ -257,7 +298,7 @@ ul {
   background-color: #1A252F;
 }
 .footer_bottom p {
-  font-size: 0.9em;
+  font-size: 13px;
   line-height: 72px;
   margin-bottom: 0;
 }
