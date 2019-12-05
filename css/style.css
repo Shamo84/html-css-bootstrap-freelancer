@@ -229,10 +229,14 @@ ul {
 
 /* CONTACT-ME */
 .contact_me {
-  height: 974px;
+  padding: 70px 0 110px;
 }
 .contact_me .thick_line {
   background-color: black;
+}
+.contact_me .form {
+  text-align: left;
+  margin: 60px auto 0;
 }
 .contact_me input,
 .contact_me textarea {
@@ -245,12 +249,30 @@ ul {
 .contact_me button {
   background-color: #1ABC9C;
   border: 0;
-  float: left;
   padding: 20px 30px;
   border-radius: 8px;
 }
 .contact_me button:hover {
   background-color: #159A80;
+}
+
+.contact_me .form_width {
+  width: 510px;
+}
+@media screen and (min-width: 768px) {
+  .contact_me .form_width {
+    width: 610px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact_me .form_width {
+    width: 690px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact_me .form_width {
+    width: 730px;
+  }
 }
 
 
